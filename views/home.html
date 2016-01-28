@@ -21,7 +21,7 @@
 						$("#showStatus").append("There is no desk posted yet");
 					} else {
 						$.each(res.message,function(index,value) {
-							$("#showStatus").append(value.UserDeskUploadsTitle + '<br> <p><img src="'+value.UserDeskUploadsFileName+'"></img></p><hr>');
+							$("#showStatus").append(value.UserDeskUploadsTitle + '<br> <p><img src="'+value.UserDeskUploadsPath+'"></img></p><hr>');
 						});
 					}
 				});

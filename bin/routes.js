@@ -78,7 +78,7 @@ var ExpressRouter = function(app,router,io) {
           console.log(req.body);
           handle_database(req,"addStatus",function(response){
             if(!response) {
-              res.json({"error" : false, "message" : "Status is added.", "file" : self.fileInfo.name});
+              res.json({"error" : false, "message" : "Status is added.", "file" : self.fileInfo.path});
             } else {
               res.json({"error" : false, "message" : "Error while adding Status"});
             }
